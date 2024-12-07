@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular</title>
+    <center>
+        <button onclick="bulbOn()">On</button>
+        <img src="off.jpg" id="image" height="150" width="250">
+        <button onclick="bulbOff()">Off</button>
+    </center>
+</head>
+<body>
+    <script>
+        function bulbOff(){
+            let img=document.getElementById("image");
+            img.src="off.jpg"
+        }
+        function bulbOn(){
+            let img=document.getElementById("image");
+            img.src="on.jpg"
+        }
+    </script>
+</body>
+</html>
